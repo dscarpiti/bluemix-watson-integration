@@ -1,0 +1,6 @@
+@mixin font-face( $family , $src ) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}') format( 'opentype' ); 
+	}
+}

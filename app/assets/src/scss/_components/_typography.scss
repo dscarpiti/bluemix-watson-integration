@@ -1,0 +1,9 @@
+// Font Import
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800);
+@import "_font";
+@include font-face('HelveticaInserat', '_fontes/HelveticaInseratLTStd-Roman_0.otf');
+/************************************************** TYPOGRAPHY *****************************/
+$base-font: 'Trebuchet MS', sans-serif;
+$variant-font: '', sans-serif;
+$base-size: 14;
+$base-line-height: 1.4;

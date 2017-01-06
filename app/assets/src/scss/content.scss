@@ -1,0 +1,74 @@
+
+@import "_components/_variables";
+
+.fieldset{
+    border:0;
+    position:relative;
+}
+.input{
+    width: 100%;
+    display:block;
+    background:transparent;
+    border-bottom:1px solid $color-1;
+    padding:5px 0;
+}
+.conversation-list{
+    display: none;
+    width: 100%;
+    margin-bottom:50px;
+    height: 280px;
+    overflow-y:auto;
+    
+    .conversation-item{
+        display: block;
+        width: 100%;
+        padding: 25px 0;
+        border-bottom: 1px solid gainsboro;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+    
+    .conversation-avatar{
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border:1px solid $color-1;
+        display:block;
+    }
+    
+    .conversation-text{
+        width: calc( ( 100% - 80px ) - 30px );
+        padding:0 15px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        color: $color-1;
+    }
+    
+    .conversation-from-person{
+        .conversation-avatar{
+            order:2;
+            background: url( ../img/person.png ) no-repeat center center #FFF / cover;
+        }
+        .conversation-text{
+            order:1;
+            justify-content:flex-end;
+        }
+    }
+    
+    .conversation-from-watson{
+        .conversation-avatar{
+            order: 1;
+            background: url( ../img/watson.png ) no-repeat center center #FFF / cover;
+        }
+        .conversation-text{
+            order:2;
+            justify-content:flex-start;
+        }
+    }
+}

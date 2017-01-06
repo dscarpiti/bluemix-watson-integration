@@ -1,0 +1,50 @@
+// BUTTONS
+
+@import '_variables';
+
+.btn-push{
+    padding: 15px 25px;
+    color: #FFF;
+    background: $color-1;
+    cursor: pointer;
+    font-size:18px;
+    font-weight: 100;
+    display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .2s linear;
+    position: relative;
+    text-align: center;
+    border: 0;
+    &:after{
+        width: 0;
+        height: 0;
+        content: '';
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: darken( $color-1 , 20% );
+        border-left-color: transparent;
+        transform: rotate(45deg);
+        border-style: solid;
+        border-right-width: 15px;
+        border-top-width: 15px;
+        border-bottom-width: 15px;
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+        transition: .2s linear;
+    }
+    &:hover{
+       border-radius: 0 0 15px;
+        &:after{
+            right: -0px;
+            bottom: -5px;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .btn-push{
+        width: 100%;
+    }
+}

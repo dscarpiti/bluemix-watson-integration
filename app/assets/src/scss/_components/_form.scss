@@ -1,0 +1,78 @@
+.form{
+    .linha{
+        display:block;
+        margin:5px auto;
+        &:after{
+            content:'';
+            display:block;
+            width: 100%;
+            height:0;
+            clear:both;
+        }
+    }
+    .fieldset{
+     display:block;
+     padding:5px;
+     &.fd-100{
+         width: 100%;
+     }
+     &.fd-50{
+        width:49%;
+        &:first-of-type{
+             float:left;
+        }
+        &:last-of-type{
+             float:right;
+        }
+     }
+     &.fd-30{
+         width:29%;
+        &:first-of-type{
+             float:left;
+        }
+        &:last-of-type{
+             float:right;
+        }
+         
+     }
+     &.fd-70{
+         width:69%;
+        &:first-of-type{
+             float:left;
+        }
+        &:last-of-type{
+             float:right;
+        }
+         
+     }
+    }
+    .input{
+        width: 100%;
+        border:1px solid gainsboro;
+        outline:none;
+        padding:10px;
+        font-size:18px;
+        color:$text-color;
+        resize:none;
+    }
+    .label{
+        display:block;
+        text-align:left;
+        font-size:15px;
+        color:$text-color;
+    }
+}
+
+@import '_buttons';
+
+@import '_messages';
+
+@media (max-width: 550px){
+	.form{
+		.fieldset{
+			width: 100% !important;
+			float: none !important;
+			margin:0 auto !important;
+		}
+	}
+}

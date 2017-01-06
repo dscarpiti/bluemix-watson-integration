@@ -1,0 +1,28 @@
+// mini-flex-framework
+.flex{
+	display:flex;
+	&.col{
+		flex-direction:column;
+	}
+	&.col-reverse{
+		flex-direction:column-reverse;
+	}
+	&.row{
+		flex-direction:row;
+	}
+	&.row-reverse{
+		flex-direction:row-reverse;
+	}
+	&.centered{
+		align-items:center;
+		justify-content:center;
+	}
+	@for $i from 1 through 12{
+		.order-#{$i}{
+			order:$i;
+		}
+		.flex-#{$i}{
+			flex:$i;
+		}
+	}
+}

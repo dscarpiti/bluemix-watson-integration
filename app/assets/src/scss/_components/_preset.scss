@@ -1,0 +1,154 @@
+
+@import "_variables";
+
+// VARIABLES-CLASSES
+.link-padrao{
+  font-size:inherit;
+  position:relative;
+  color:$color-1;
+  transition:.2s linear;
+  text-shadow:1px 1px 1px;
+  &:after{
+    position:absolute;
+    content:"";
+    background:$color-1;
+    bottom:1%;
+    right: 0;
+    height: 7%;
+    width: 0;
+    transition:.2s linear;
+  }
+  &:hover{
+    &:after{
+      width: 100%;
+    }
+  }
+  &.color-2{
+    color:$color-2;
+    &:after{
+      background:$color-2;
+    }
+  }
+  &.fixed{
+    &:after{
+      width:100%;
+    }
+  }
+}
+.btn-padrao{
+  border-radius:5px;
+  background:$color-2;
+  color:$color-1;
+  font-size:15px;
+  padding:0.5em 2em;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  transition:.2s linear;
+  &:hover, &:focus{
+    background:$color-1;
+    color:$color-2;
+  }
+}
+.figure{
+  max-width: 100%;
+  .img{
+    max-width: 100%;
+    display: block;
+    margin:0 auto;
+  }
+}
+.box-shadow{
+  box-shadow:2px 5px 14px 1px gainsboro;
+}
+
+
+// scrollbar
+*::-webkit-scrollbar{
+  width: 10px;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-webkit-scrollbar-track{
+  border-radius: 0;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-webkit-scrollbar-thumb{
+  width: 10px;
+  background: $color-1;
+  border-radius: 0;
+  height:10px;
+  position:absolute;
+}
+*::-moz-scrollbar{
+  width: 10px;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-moz-scrollbar-track{
+  border-radius: 0;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-moz-scrollbar-thumb{
+  width: 10px;
+  background: $color-1;
+  border-radius: 0;
+  height:10px;
+  position:absolute;
+}
+*::-ms-scrollbar{
+  width: 10px;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-ms-scrollbar-track{
+  border-radius: 0;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-ms-scrollbar-thumb{
+  width: 10px;
+  background: $color-1;
+  border-radius: 0;
+  height:10px;
+  position:absolute;
+}
+*::-o-scrollbar{
+  width: 10px;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-o-scrollbar-track{
+  border-radius: 0;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+}
+*::-o-scrollbar-thumb{
+  width: 10px;
+  background: $color-1;
+  border-radius: 0;
+  height:10px;
+  position:absolute;
+}
+// /scrollbar
+
+// selection
+::selection {
+  background:lighten( $color-1 , 10% );
+  color:#FFF;
+}
+::-moz-selection {
+  background:lighten( $color-1 , 10% );
+  color:#FFF;
+}
+::-ms-selection {
+  background:lighten( $color-1 , 10% );
+  color:#FFF;
+}
+::-o-selection {
+  background:lighten( $color-1 , 10% );
+  color:#FFF;
+}
+// /selection

@@ -1,0 +1,38 @@
+@import '_variables';
+
+// table
+.table{
+    width: 100%;
+    max-width: 100%;
+    word-break: break-all;
+    display:table;
+    .thead{
+        background:$color-1;
+    }
+    .td{
+        display:table-row;
+    }
+    .th{
+        color:#FFF;
+        padding:10px;
+        display:table-cell;
+        text-align:left;
+    }
+    .td{
+        color:$text-color;
+        padding:10px;
+        text-align:left;
+        display:table-cell;
+    }
+    .tbody{
+        .tr{
+            &:nth-child( odd ){
+                background:#f4f4f5;
+            }
+            &:nth-child( even ){
+                background:darken( #f4f4f5 , 5% );
+            }
+        }
+    }
+}
+// /table

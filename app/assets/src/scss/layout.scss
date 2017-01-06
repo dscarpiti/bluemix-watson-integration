@@ -1,0 +1,43 @@
+
+@import "_components/_variables";
+
+.body{
+    background:#252525;
+}
+
+// HEADER
+
+.header{
+    margin:20px auto;
+}
+
+// / HEADER
+
+// FOOTER
+
+.footer{
+    padding:10px 0;
+}
+
+// / FOOTER
+
+// MAIN
+
+.main{
+    padding:25px 0;
+    &[data-status="started"]{
+        background:#FFF;
+        color:$text-color;
+        .input , .label , .text {
+            color:$text-color;
+        }
+        [data-question="first"]{
+            display:none;
+        }
+        [data-conversation="list"]{
+            display:block;
+        }
+    }
+}
+
+// / MAIN

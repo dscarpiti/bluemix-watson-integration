@@ -1,0 +1,46 @@
+@import "_variables";
+
+// CLASSES
+
+
+// FONT
+
+.font-regular{
+  font-weight:regular;
+}
+.font-bold{
+  font-weight:bold;
+}
+.font-thin{
+  font-weight:100;
+}
+.font-18{
+  font-size:18px;
+}
+.font-22{
+  font-size:22px;
+}
+.font-28{
+  font-size:28px;
+}
+
+// COLOR
+
+.clr-1{
+    color:$color-1;
+}
+.clr-white{
+  color:#FFF;
+}
+
+// GENERAL
+
+.dsp-block{
+  display:block;
+}
+.text-center{
+  text-align:center;
+}
+
+
+// / CLASSES

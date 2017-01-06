@@ -1,0 +1,57 @@
+// BUTTONS
+
+@import '_variables';
+
+.message{
+    display:flex;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    border-style:solid;
+    border-width:1px;
+    padding:15px;
+    margin:15px auto;
+    &:before{
+        color: inherit;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        margin: 0 5px 0 -5px;
+        font-weight: bold;
+        border:1px solid;
+        padding:3px;
+        width:20px;
+        height:20px;
+        border-radius:50%;
+    }
+    &.success{
+        background: rgba( $color-confirm , 0.4 );
+        color:darken( $color-confirm , 20% );
+        border-color:darken( $color-confirm , 20% );
+        &:before{
+            content: '\2713';
+        }
+    }
+    &.error{
+        background: rgba( $color-cancel , 0.4 );
+        color:darken( $color-cancel , 20% );
+        border-color:darken( $color-cancel , 20% );
+        &:before{
+            content: '\00d7';
+        }
+    }
+    &.alert{
+        background: rgba( $color-alert , 0.4 );
+        color:darken( $color-alert , 20% );
+        border-color:darken( $color-alert , 20% );
+        &:before{
+            content: '!';
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .message{
+        flex-direction:column;
+    }
+}
