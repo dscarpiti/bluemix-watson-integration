@@ -1,6 +1,6 @@
-# IBM Watson Integration
-## Using IBM Bluemix
-------------------------------------
+# IBM Watson Integration (Using IBM Bluemix)
+
 authors:
+
 @gabrieluizramos
 @dscarpiti
